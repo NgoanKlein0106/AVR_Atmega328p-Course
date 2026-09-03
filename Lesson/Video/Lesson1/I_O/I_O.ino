@@ -19,6 +19,7 @@
 #define set_bit(reg, bit_num) (reg |= (1<<bit_num))
 #define clear_bit(reg, bit_num) (reg &= ~(1<<bit_num))
 
+#define NUM_1 0b
 int main(void){
 //Init
   set_bit(DDRB, PORTB0);

@@ -44,6 +44,9 @@ int main(void) {
   EICRA |= ((1<<ISC01) | (1<<ISC00)); //Detect RISING edge
   EIMSK |= (1<<INT0); //Allow ISR on INT0
   
+
+    //Port interrupt
+    
   SREG |= (0X80); //ENABLE GLOBAL INTERRUPT
 
   while (1) {
@@ -54,3 +57,4 @@ int main(void) {
   }
   return 0;
 }
+//242bytes

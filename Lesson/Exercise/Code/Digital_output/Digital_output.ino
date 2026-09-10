@@ -10,22 +10,8 @@ int main(){
   //Initialize
   DDRB = 0X01;
   PORTB = 0X00;
-  //Main loop - This will affect other pins
-  // while(1){
-  //   PORTB = (1<<0);//On bit by bit
-  //   // PORTB = 0XFF; //On full port
-  //   _delay_ms(500);
-  //   PORTB = !(1<<0);//Off bit by bit
-  //   // PORTB = 0X00; //Off full port
-  //   _delay_ms(500);
-  // }
-  //Main loop - This wont affect other pins
-  //  while(1){
-  //   PORTB |= (1 << PORTB0);
-  //   _delay_ms(500);
-  //   PORTB &= ~(1 << PORTB0);
-  //   _delay_ms(500);
-  // }
+
+
   //Main loop - Using macro
   while(1){
     // PORTB |= (1 << PORTB0);
@@ -38,3 +24,23 @@ int main(){
 
   return 0;
 }
+
+  //Main loop - This will affect other pins
+  // while(1){
+  //   PORTB = (1<<0);//On bit by bit
+  //   // PORTB = 0XFF; //On full port
+  //   _delay_ms(500);
+  //   PORTB = !(1<<0);//Off bit by bit
+  //   // PORTB = 0X00; //Off full port
+  //   _delay_ms(500);
+  // }
+
+
+
+  //Main loop - This wont affect other pins
+  //  while(1){
+  //   PORTB |= (1 << PORTB0);
+  //   _delay_ms(500);
+  //   PORTB &= ~(1 << PORTB0);
+  //   _delay_ms(500);
+  // }
